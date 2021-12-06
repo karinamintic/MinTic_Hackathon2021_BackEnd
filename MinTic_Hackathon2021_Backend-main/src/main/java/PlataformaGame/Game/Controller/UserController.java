@@ -38,7 +38,7 @@ public class UserController {
         return servicios.getAll();
     }
     
-    // find by user and pass  
+    // find by user and pass
     @GetMapping("/{nameUser}/{password}")
     public User getUser(@PathVariable String nameUser, @PathVariable String password ) {
         User user = servicios.getExistsUserAndPassword(nameUser, password);
